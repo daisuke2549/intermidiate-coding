@@ -223,8 +223,23 @@ header {
   border: none;
 }
 
-.info__label a {
-  color: #000;
+.news__link a {
+  color: #E81919;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__link a::after {
+  content: "";
+  width: 7px;
+  height: 11px;
+  background: transparent url(../img/news-arrow.svg);
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 2px;
+  vertical-align: middle;
 }
 
 .info {
@@ -234,12 +249,20 @@ header {
   display: flex;
 }
 
+.info__meta {
+  width: 1000px;
+  /* 固定値 */
+}
+
+/* タイトルのエリア */
 .info__label a {
   display: inline-block;
   color: #fff;
   font-weight: 700;
   text-align: center;
   padding: 8px;
+  margin-left: 9px;
+  margin-top: -5px;
   background: #666;
   border-radius: 4px;
   text-decoration: none;
@@ -248,8 +271,22 @@ header {
   transition: all 0.3s ease 0s;
 }
 
+.info__label.info__label--type01 a {
+  background: #3f51b5;
+  text-decoration: none;
+}
+
+.info__label.info__label--type02 a {
+  background: #E81919;
+  text-decoration: none;
+}
+
 .info__title a {
   color: #000;
+}
+
+.info__title {
+  margin-left: 20px;
 }
 
 .info__meta {
@@ -426,5 +463,27 @@ header {
   .card-items p {
     font-size: 16px;
     padding-top: 12px;
+  }
+  .news__link a {
+    color: #E81919;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info {
+    padding: 20px  0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+  }
+  .info__meta {
+    width: 300px;
+    /* 固定値 */
+  }
+  .info__title {
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 16px;
   }
 }
