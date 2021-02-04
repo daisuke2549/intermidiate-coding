@@ -366,37 +366,50 @@ h2:after {
 .price-table{
   margin-left: 100px;
   width: 100%;
+  margin-right: 15px;
 }
 
 
-.my-parts {
+/* 最初の列のみ */
+.table-default th:first-child {
+  width: 170px;
+}
+
+.table-default {
+  width: 100%;
   border-collapse: collapse;
-  border: 1px solid rgba(0,0,0,.1);
+  border: 1px solid #707070;
+  background: #fff;
+  height:286px;
   table-layout: fixed;
 }
-.my-parts th, .my-parts  td{
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1.0em 4.6em;
-  text-align: center;
-  background: #fff;
+
+.table-default th,
+.table-default td {
+  padding: 18px 24px;
+  border: 1px solid #707070;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-weight: 700;
 }
-.my-parts  td{
+.table-default td{
   text-align: right;
-  color:red;
+}
+.table-default th{
+  padding: 14px 8px;
 }
 
 
-.my-parts th {
-  background: #707070;
+.table-default th {
+  text-align: center;
+  background: #999;
+  font-weight: 700;
   color: #fff;
-  font-weight: bold;
 }
 
-
-
-
-
-
+.table-default th:first-child {
+  width: 170px;
+}
 
 
 
