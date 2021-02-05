@@ -324,88 +324,371 @@ header{
 
 
 
-/* price part */
-
+/* priceセクション */
 .price{
   width:100%;
   height: 758px;
   opacity: 1;
+  background-color:#EFEFEF;
 }
 
 .price-section-title{
-  h2{
-    text-align: center;
-    margin-top: 82px;
-    position: relative;
-    font: normal normal bold 48px/82px YuGothic;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
-  }
-  h2:after {
-      content: "";
-      margin: 0 auto;
-      display: block;
-      width: 60px;
-      height: 4px;
-      border-radius: 2px;
-      background: #3F51B5 0% 0% no-repeat padding-box;
-    }
-}
-
-.table__content{
-  display: flex;
-  margin-left: 40px;
-  margin-top: 40px;
-  img{
-    width:100%;
-  }
-}
-
-.table-default{
-  width:100%;
-  height: 286px;
-  background-color:#707070;
-  margin-left: 40px;
-  justify-content: center;
+h2{
   text-align: center;
-  color:#fff;
-  border: 1px solid var(--unnamed-color-707070);
+  padding-top: 82px;
+  position: relative;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+h2:after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+  }
 }
 
-.table-default tr{
-  width:170px;
-
+.table-default th:first-child {
+  width: 170px;
 }
 
-.table-default td{
-  width:auto;
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  background: #fff;
+  height:286px;
+  table-layout: fixed;
 }
 
-
-.table-default th, td {
+.table-default th,
+.table-default td {
+  padding: 18px 24px;
+  border: 1px solid #707070;
   vertical-align: middle;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.table-default td{
+  text-align: right;
+}
+.table-default th{
+  padding: 14px 8px;
+}
+
+
+.table-default th {
+  text-align: center;
+  background: #999;
+  font-weight: 700;
+  color: #fff;
+}
+
+.table-default th:first-child {
+  width: 170px;
+}
+
+.table {
+  background: #efefef;
 }
 
 
 
+.table__content {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__image {
+  margin-left: 30px;
+  img{
+
+    width: 454px;
+    margin-right: 40px;
+    text-align: center;
+  }
+}
+
+.table__price{
+  margin-right:20px ;
+}
+
+
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  background: #fff;
+
+  table-layout: fixed;
+}
+
+
+@media (max-width: 767px) {
+  .table__image {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.table-default th,
+.table-default td {
+  padding: 18px 24px;
+  border: 1px solid #707070;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
+.table-default td {
+  text-align: right;
+}
+
+.table-default td.table-default__multiline {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.table-default td span.m-active {
+  color: #e81919;
+}
+
+.table-default td span.m-small {
+  font-size: 0.825em;
+}
+
+.table-default__attention {
+  font-size: 13px;
+}
+
+.table__attention {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.table__attention a {
+  font-weight: 700;
+  color: #333;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+
+/* アクセスセクション */
+
+.access{
+  width:100%;
+  opacity: 1;
+  background-color:#fff;
+}
+
+.access-section-title{
+h2{
+  text-align: center;
+  padding-top: 82px;
+  position: relative;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+h2:after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+  }
+}
+.map__iframe-wrap{
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 80px;
+
+}
+
+.google-map{
+  width: 100%;
+  padding-top: 400 / 800 * 100%;
+  position: relative;
+  max-width:800px;
+  margin: 0 auto;
+
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+ 
+  }
+}
+
+.map-info dt{
+    float:left;
+
+}
+
+.map-info dd{
+  text-align: left;
+
+}
+
+.map--link{
+  text-align: center;
+  color:#333;
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+  opacity: 1;
+    a{
+      width: 104px;
+      background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  
+      padding:20px 77px;
+      font-size:16px;
+      border-radius: 8px;
+      background:#3F51B5  url('../img/button-arrow.svg') 98% 50% no-repeat padding-box;
+    
+    }  
+}
+
+/* コンタクトセクション */
+
+
+.contact{
+  width:100%;
+  opacity: 1;
+  background-color:#EFEFEF;
+}
+
+.contact-section-title{
+  margin-bottom: 80px;;
+h2{
+  text-align: center;
+  padding-top: 82px;
+  position: relative;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+h2:after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+  }
+}
 
 
 
+.contact__item {
+  margin: 80px auto 0;
+  padding: 60px;
+  background: #fff;
+  width: 800px;
+  max-width: 100%;
+
+}
+
+.contact__controls {
+  margin: 0;
+}
+
+.contact__control {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__control:last-child {
+  margin-bottom: 0;
+}
+
+.contact__control dt {
+  width: 160px;
+  padding: 6px 0 0;
+  margin: 0;
+}
+.contact-form{
+  padding-bottom: 120px;
+}
+
+.contact__control dd {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
 
 
 
+.contact__radio {
+  margin-top: 26px;
+  padding: 0;
+}
+
+.contact__radio-item {
+  margin-right: 32px;
+}
+
+.contact__radio-item:last-child {
+  margin-right: 0;
+}
+
+.contact__check a {
+  color: #333;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+}
+.contact__check {
+  margin-top: 58px;
+  text-align: center;
+}
+
+.contact__submit{
+    text-align: center;
+    color:#333;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+   a{  
+    width: 104px;
+    background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+
+    padding:20px 77px;
+    font-size:16px;
+    border-radius: 8px;
+    background:#3F51B5  url('../img/button-arrow.svg') 98% 50% no-repeat padding-box;
+  }
+}
 
 
 
-
-
-
-
-
-
-
-
+  /* フッター */
+footer{
+    background-color: #666666;
+    height: 200px;
+}
 
 
 
