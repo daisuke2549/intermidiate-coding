@@ -180,7 +180,7 @@ header{
   margin: 0 auto;
   height: 301px;
   margin-bottom: 20px;
-  padding: 16px 16px 35px;
+  padding: 16px 15px 10px;
   background-color: #ffffff;
   
 
@@ -346,31 +346,6 @@ h2:after {
   }
 }
 
-.price-items{
-   margin-top: 80px;
-   display: flex;
-   margin-bottom: 146px;
-}
-
-
-.price-img{
-    margin-left: 20px;
-    height:auto;
-    img{
-      width:100%;
-    }
-}
-
-.price-table{
-  margin-left: 40px;
-  width: 100%;
-  margin-right: 15px;
-
-
-}
-
-
-/* 最初の列のみ */
 .table-default th:first-child {
   width: 170px;
 }
@@ -425,8 +400,9 @@ h2:after {
 }
 
 .table__image {
-
+  margin-left: 30px;
   img{
+
     width: 454px;
     margin-right: 40px;
     text-align: center;
@@ -446,11 +422,7 @@ h2:after {
 
   table-layout: fixed;
 }
-@media (max-width: 1247px) {
-  .table__image {
-    margin-right: 62px;
-  }
-}
+
 
 @media (max-width: 767px) {
   .table__image {
@@ -512,7 +484,6 @@ h2:after {
 
 .access{
   width:100%;
-  height: 758px;
   opacity: 1;
   background-color:#fff;
 }
@@ -537,11 +508,19 @@ h2:after {
     background: #3F51B5 0% 0% no-repeat padding-box;
   }
 }
+.map__iframe-wrap{
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 80px;
+
+}
+
 .google-map{
-  margin-top: 80px;
   width: 100%;
   padding-top: 400 / 800 * 100%;
   position: relative;
+  max-width:800px;
+  margin: 0 auto;
 
   > iframe {
     position: absolute;
@@ -550,6 +529,7 @@ h2:after {
     width: 100%;
     height: 100%;
     border: none;
+ 
   }
 }
 
@@ -563,7 +543,24 @@ h2:after {
 
 }
 
+.map--link{
+  text-align: center;
+  color:#333;
+  margin-top: 30px;
+  margin-bottom: 100px;
 
+  opacity: 1;
+    a{
+      width: 104px;
+      background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  
+      padding:20px 77px;
+      font-size:16px;
+      border-radius: 8px;
+      background:#3F51B5  url('../img/button-arrow.svg') 98% 50% no-repeat padding-box;
+    
+    }  
+}
 
 
 
@@ -734,7 +731,6 @@ nav.globalMenuSp.active {
 .card-items{
   width:100%;
   max-width: 262px;
-  margin: 0 auto;
   padding: 16px 16px 35px;
   background-color: #ffffff;
   margin-bottom: 10px;
@@ -749,6 +745,8 @@ nav.globalMenuSp.active {
   p{ 
     font-size:$font-default;
     padding-top: 12px;
+    padding-bottom: - 
+    10px;
   }
 
 }

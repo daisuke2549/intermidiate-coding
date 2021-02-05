@@ -169,7 +169,7 @@ header {
   margin: 0 auto;
   height: 301px;
   margin-bottom: 20px;
-  padding: 16px 16px 35px;
+  padding: 16px 15px 10px;
   background-color: #ffffff;
 }
 
@@ -330,28 +330,6 @@ header {
   background: #3F51B5 0% 0% no-repeat padding-box;
 }
 
-.price-items {
-  margin-top: 80px;
-  display: flex;
-  margin-bottom: 146px;
-}
-
-.price-img {
-  margin-left: 20px;
-  height: auto;
-}
-
-.price-img img {
-  width: 100%;
-}
-
-.price-table {
-  margin-left: 40px;
-  width: 100%;
-  margin-right: 15px;
-}
-
-/* 最初の列のみ */
 .table-default th:first-child {
   width: 170px;
 }
@@ -404,6 +382,10 @@ header {
   display: flex;
 }
 
+.table__image {
+  margin-left: 30px;
+}
+
 .table__image img {
   width: 454px;
   margin-right: 40px;
@@ -420,12 +402,6 @@ header {
   border: 1px solid #707070;
   background: #fff;
   table-layout: fixed;
-}
-
-@media (max-width: 1247px) {
-  .table__image {
-    margin-right: 62px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -481,7 +457,6 @@ header {
 /* アクセスセクション */
 .access {
   width: 100%;
-  height: 758px;
   opacity: 1;
   background-color: #fff;
 }
@@ -506,11 +481,18 @@ header {
   background: #3F51B5 0% 0% no-repeat padding-box;
 }
 
-.google-map {
+.map__iframe-wrap {
+  margin: 0 auto;
+  max-width: 800px;
   margin-top: 80px;
+}
+
+.google-map {
   width: 100%;
   padding-top: 50%;
   position: relative;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .google-map > iframe {
@@ -528,6 +510,23 @@ header {
 
 .map-info dd {
   text-align: left;
+}
+
+.map--link {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  opacity: 1;
+}
+
+.map--link a {
+  width: 104px;
+  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  padding: 20px 77px;
+  font-size: 16px;
+  border-radius: 8px;
+  background: #3F51B5 url("../img/button-arrow.svg") 98% 50% no-repeat padding-box;
 }
 
 /* レスポンシブ対応 */
@@ -674,7 +673,6 @@ header {
   .card-items {
     width: 100%;
     max-width: 262px;
-    margin: 0 auto;
     padding: 16px 16px 35px;
     background-color: #ffffff;
     margin-bottom: 10px;
@@ -690,6 +688,7 @@ header {
   .card-items p {
     font-size: 16px;
     padding-top: 12px;
+    padding-bottom: -10px;
   }
   .news__link a {
     color: #E81919;
