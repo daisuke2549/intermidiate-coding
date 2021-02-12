@@ -4,7 +4,7 @@ body {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic) 　游ゴシック体;
 }
 
-li　 {
+li, ul　 {
   list-style: none;
   text-decoration: none;
 }
@@ -646,7 +646,48 @@ header {
 /* フッター */
 footer {
   background-color: #666666;
-  height: 200px;
+  height: 258px;
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left-logo {
+  padding-left: 40px;
+}
+
+.footer-left-logo img {
+  margin-top: 60px;
+}
+
+.footer-left-logo p {
+  font-size: 14px;
+}
+
+.footer-left-logo p:nth-child(2) {
+  padding-top: 6px;
+}
+
+.footer-left-logo-comment {
+  margin-top: 32px;
+}
+
+.footer-center-part {
+  display: flex;
+  justify-content: start;
+  padding-top: 60px;
+}
+
+.footer-right-part {
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
+.footer-right-part img {
+  padding: 0 4px;
 }
 
 /* レスポンシブ対応 */
