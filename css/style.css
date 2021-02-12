@@ -4,7 +4,7 @@ body {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-27) var(--unnamed-font-family-yugothic) 　游ゴシック体;
 }
 
-li, ul　 {
+li, ul {
   list-style: none;
   text-decoration: none;
 }
@@ -169,7 +169,7 @@ header {
   margin: 0 auto;
   height: 301px;
   margin-bottom: 20px;
-  padding: 16px 15px 10px;
+  padding: 16px 16px 35px;
   background-color: #ffffff;
 }
 
@@ -254,6 +254,7 @@ header {
   /* 固定値 */
 }
 
+/* タイトルのエリア */
 .info__label a {
   display: inline-block;
   color: #fff;
@@ -447,158 +448,6 @@ header {
   font-size: 14px;
 }
 
-/* priceセクション */
-.price {
-  width: 100%;
-  height: 758px;
-  opacity: 1;
-  background-color: #EFEFEF;
-}
-
-.price-section-title h2 {
-  text-align: center;
-  padding-top: 82px;
-  position: relative;
-  font: normal normal bold 48px/82px YuGothic;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-}
-
-.price-section-title h2:after {
-  content: "";
-  margin: 0 auto;
-  display: block;
-  width: 60px;
-  height: 4px;
-  border-radius: 2px;
-  background: #3F51B5 0% 0% no-repeat padding-box;
-}
-
-.table-default th:first-child {
-  width: 170px;
-}
-
-.table-default {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #707070;
-  background: #fff;
-  height: 286px;
-  table-layout: fixed;
-}
-
-.table-default th,
-.table-default td {
-  padding: 18px 24px;
-  border: 1px solid #707070;
-  vertical-align: middle;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.table-default td {
-  text-align: right;
-}
-
-.table-default th {
-  padding: 14px 8px;
-}
-
-.table-default th {
-  text-align: center;
-  background: #999;
-  font-weight: 700;
-  color: #fff;
-}
-
-.table-default th:first-child {
-  width: 170px;
-}
-
-.table {
-  background: #efefef;
-}
-
-.table__content {
-  margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.table__image {
-  margin-left: 30px;
-}
-
-.table__image img {
-  width: 454px;
-  margin-right: 40px;
-  text-align: center;
-}
-
-.table__price {
-  margin-right: 20px;
-}
-
-.table-default {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid #707070;
-  background: #fff;
-  table-layout: fixed;
-}
-
-.table-default .table__attention a {
-  font-weight: 700;
-  color: #333;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 767px) {
-  .table__image {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 32px;
-  }
-}
-
-.table-default th,
-.table-default td {
-  padding: 18px 24px;
-  border: 1px solid #707070;
-  vertical-align: middle;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.table-default td {
-  text-align: right;
-}
-
-.table-default td.table-default__multiline {
-  padding-top: 10px;
-  padding-bottom: 8px;
-}
-
-.table-default td span.m-active {
-  color: #e81919;
-}
-
-.table-default td span.m-small {
-  font-size: 0.825em;
-}
-
-.table-default__attention {
-  font-size: 13px;
-}
-
-.table__attention {
-  margin-top: 6px;
-  font-size: 14px;
-}
-
 .table__attention a {
   font-weight: 700;
   color: #333;
@@ -660,68 +509,11 @@ header {
   float: left;
 }
 
-/* アクセスセクション */
-.access {
-  width: 100%;
-  opacity: 1;
-  background-color: #fff;
-}
-
-.access-section-title h2 {
-  text-align: center;
-  padding-top: 82px;
-  position: relative;
-  font: normal normal bold 48px/82px YuGothic;
-  letter-spacing: 0px;
-  color: #333333;
-  opacity: 1;
-}
-
-.access-section-title h2:after {
-  content: "";
-  margin: 0 auto;
-  display: block;
-  width: 60px;
-  height: 4px;
-  border-radius: 2px;
-  background: #3F51B5 0% 0% no-repeat padding-box;
-}
-
-.map__iframe-wrap {
-  margin: 0 auto;
-  max-width: 800px;
-  margin-top: 80px;
-}
-
-.google-map {
-  width: 100%;
-  padding-top: 50%;
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.google-map > iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.map-info dt {
-  float: left;
-  /* コンタクトセクション */
-  /* フッター */
-  /* レスポンシブ対応 */
-}
-
-.map-info dt .map-info dd {
+.map-info dd {
   text-align: left;
 }
 
-.map-info dt .map--link {
+.map--link {
   text-align: center;
   color: #333;
   margin-top: 30px;
@@ -729,7 +521,7 @@ header {
   opacity: 1;
 }
 
-.map-info dt .map--link a {
+.map--link a {
   width: 104px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   padding: 20px 77px;
@@ -738,38 +530,18 @@ header {
   background: #3F51B5 url("../img/button-arrow.svg") 98% 50% no-repeat padding-box;
 }
 
-.map-info dt .map-info dd {
-  text-align: left;
-}
-
-.map-info dt .map--link {
-  text-align: center;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 100px;
-  opacity: 1;
-}
-
-.map-info dt .map--link a {
-  width: 104px;
-  background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
-  padding: 20px 77px;
-  font-size: 16px;
-  border-radius: 8px;
-  background: #3F51B5 url("../img/button-arrow.svg") 98% 50% no-repeat padding-box;
-}
-
-.map-info dt .contact {
+/* コンタクトセクション */
+.contact {
   width: 100%;
   opacity: 1;
   background-color: #EFEFEF;
 }
 
-.map-info dt .contact-section-title {
+.contact-section-title {
   margin-bottom: 80px;
 }
 
-.map-info dt .contact-section-title h2 {
+.contact-section-title h2 {
   text-align: center;
   padding-top: 82px;
   position: relative;
@@ -779,7 +551,7 @@ header {
   opacity: 1;
 }
 
-.map-info dt .contact-section-title h2:after {
+.contact-section-title h2:after {
   content: "";
   margin: 0 auto;
   display: block;
@@ -789,7 +561,7 @@ header {
   background: #3F51B5 0% 0% no-repeat padding-box;
 }
 
-.map-info dt .contact__item {
+.contact__item {
   margin: 80px auto 0;
   padding: 60px;
   background: #fff;
@@ -797,32 +569,32 @@ header {
   max-width: 100%;
 }
 
-.map-info dt .contact__controls {
+.contact__controls {
   margin: 0;
 }
 
-.map-info dt .contact__control {
+.contact__control {
   margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.map-info dt .contact__control:last-child {
+.contact__control:last-child {
   margin-bottom: 0;
 }
 
-.map-info dt .contact__control dt {
+.contact__control dt {
   width: 160px;
   padding: 6px 0 0;
   margin: 0;
 }
 
-.map-info dt .contact-form {
+.contact-form {
   padding-bottom: 120px;
 }
 
-.map-info dt .contact__control dd {
+.contact__control dd {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -830,39 +602,39 @@ header {
   margin: 0;
 }
 
-.map-info dt .contact__radio {
+.contact__radio {
   margin-top: 26px;
   padding: 0;
 }
 
-.map-info dt .contact__radio-item {
+.contact__radio-item {
   margin-right: 32px;
 }
 
-.map-info dt .contact__radio-item:last-child {
+.contact__radio-item:last-child {
   margin-right: 0;
 }
 
-.map-info dt .contact__check a {
+.contact__check a {
   color: #333;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   font-weight: 700;
 }
 
-.map-info dt .contact__check {
+.contact__check {
   margin-top: 58px;
   text-align: center;
 }
 
-.map-info dt .contact__submit {
+.contact__submit {
   text-align: center;
   color: #333;
   margin-top: 30px;
   margin-bottom: 60px;
 }
 
-.map-info dt .contact__submit a {
+.contact__submit a {
   width: 104px;
   background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
   padding: 20px 77px;
@@ -871,81 +643,72 @@ header {
   background: #3F51B5 url("../img/button-arrow.svg") 98% 50% no-repeat padding-box;
 }
 
-.map-info dt footer {
+/* フッター */
+footer {
   background-color: #666666;
-  height: 258px;
-  color: #fff;
+  height: 200px;
+  color:#fff;
 }
-
-.map-info dt .footer-top {
+.footer-top{
   display: flex;
   justify-content: space-between;
 }
-
-.map-info dt .footer-left-logo {
+.footer-left-logo{
   padding-left: 40px;
+   
+  img{
+    margin-top: 60px;
+  }
+  p{
+    font-size: 14px;
+  }
+  p:nth-child(2){
+    padding-top: 6px;
+  }
 }
-
-.map-info dt .footer-left-logo img {
-  margin-top: 60px;
-}
-
-.map-info dt .footer-left-logo p {
-  font-size: 14px;
-}
-
-.map-info dt .footer-left-logo p:nth-child(2) {
-  padding-top: 6px;
-}
-
-.map-info dt .footer-left-logo-comment {
+.footer-left-logo-comment{
   margin-top: 32px;
 }
-
-.map-info dt .footer-center-part {
+.footer-center-part{
   display: flex;
   justify-content: start;
   padding-top: 60px;
 }
-
-.map-info dt .footer-right-part {
+.footer-right-part{
   margin-right: 20px;
   margin-top: 60px;
+    
+     img{
+        padding: 0 4px;
+     }
 }
 
-.map-info dt .footer-right-part img {
-  padding: 0 4px;
-}
-
+/* レスポンシブ対応 */
 @media screen and (max-width: 767px) {
-  .map-info dt {
-    /*　ヘッダーメニュ　*/
-    /*　ハンバーガーボタン　*/
-    /* ナビ開いてる時のボタン */
-    /* price section */
-  }
-  .map-info dt .header__nav {
+  /*　ヘッダーメニュ　*/
+  .header__nav {
     display: none;
   }
-  .map-info dt .main-content {
+  .main-content {
     background-image: url(../img/mainvisual.png);
     background-position: center;
     background-size: cover;
   }
-  .map-info dt .main-content h1 {
+  .main-content h1 {
     font-size: 42px;
     position: relative;
     top: -100px;
   }
-  .map-info dt .main-content p {
+  .main-content p {
     font-size: 32px;
     position: relative;
     top: -80px;
   }
-  .map-info dt .main-content p button {
+  .main-content p button {
     width: 300px;
   }
-  .map-info dt .hamburger {
+  /*　ハンバーガーボタン　*/
+  .hamburger {
     display: block;
     position: fixed;
     z-index: 3;
@@ -956,7 +719,7 @@ header {
     cursor: pointer;
     text-align: center;
   }
-  .map-info dt .hamburger span {
+  .hamburger span {
     display: block;
     position: absolute;
     width: 30px;
@@ -967,31 +730,32 @@ header {
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .map-info dt .hamburger span:nth-child(1) {
+  .hamburger span:nth-child(1) {
     top: 10px;
   }
-  .map-info dt .hamburger span:nth-child(2) {
+  .hamburger span:nth-child(2) {
     top: 20px;
   }
-  .map-info dt .hamburger span:nth-child(3) {
+  .hamburger span:nth-child(3) {
     top: 30px;
   }
-  .map-info dt .hamburger.active span:nth-child(1) {
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span:nth-child(1) {
     -webkit-transform: translateY(6px);
     -moz-transform: translateY(6px);
     transform: translateY(6px);
   }
-  .map-info dt .hamburger.active span:nth-child(2) {
+  .hamburger.active span:nth-child(2) {
     -webkit-transform: translateY(-4px);
     -moz-transform: translateY(-4px);
     transform: translateY(-4px);
   }
-  .map-info dt .hamburger.active span:nth-child(3) {
+  .hamburger.active span:nth-child(3) {
     -webkit-transform: translateY(-14px);
     -moz-transform: translateY(-14px);
     transform: translateY(-14px);
   }
-  .map-info dt nav.globalMenuSp {
+  nav.globalMenuSp {
     position: fixed;
     z-index: 2;
     top: 0;
@@ -1003,41 +767,41 @@ header {
     transition: all 0.6s;
     width: 100%;
   }
-  .map-info dt nav.globalMenuSp ul {
+  nav.globalMenuSp ul {
     background: #ccc;
     margin: 0 auto;
     padding: 0;
     width: 100%;
   }
-  .map-info dt nav.globalMenuSp ul li {
+  nav.globalMenuSp ul li {
     list-style-type: none;
     padding: 0;
     width: 100%;
     border-bottom: 1px solid #fff;
   }
-  .map-info dt nav.globalMenuSp ul li:last-child {
+  nav.globalMenuSp ul li:last-child {
     padding-bottom: 0;
     border-bottom: none;
   }
-  .map-info dt nav.globalMenuSp ul li:hover {
+  nav.globalMenuSp ul li:hover {
     background: #ddd;
   }
-  .map-info dt nav.globalMenuSp ul li a {
+  nav.globalMenuSp ul li a {
     display: block;
     color: #000;
     padding: 1em 0;
     text-decoration: none;
   }
-  .map-info dt nav.globalMenuSp.active {
+  nav.globalMenuSp.active {
     transform: translateY(0%);
   }
-  .map-info dt .card {
+  .card {
     width: 100%;
     height: 2442px;
     background: #f0f0f0 0% 0% no-repeat padding-box;
     opacity: 1;
   }
-  .map-info dt .card-section-title h2 {
+  .card-section-title h2 {
     text-align: center;
     padding-top: 82px;
     position: relative;
@@ -1046,7 +810,7 @@ header {
     color: #333333;
     opacity: 1;
   }
-  .map-info dt .card-section-title h2:after {
+  .card-section-title h2:after {
     content: "";
     margin: 0 auto;
     display: block;
@@ -1055,55 +819,55 @@ header {
     border-radius: 2px;
     background: #3F51B5 0% 0% no-repeat padding-box;
   }
-  .map-info dt .card-container {
+  .card-container {
     display: block;
     margin-top: 80px;
     padding: 0 auto;
   }
-  .map-info dt .card-items {
+  .card-items {
     width: 100%;
     max-width: 242px;
     margin: 0 auto;
-    max-width: 262px;
     padding: 16px 16px 35px;
     background-color: #ffffff;
     margin-bottom: 10px;
   }
-  .map-info dt .card-items img {
+  .card-items img {
     max-width: 242px;
     margin: auto;
   }
-  .map-info dt .card-items h2 {
+  .card-items h2 {
     font-size: 16px;
     padding-top: 8px;
   }
-  .map-info dt .card-items p {
+  .card-items p {
     font-size: 16px;
     padding-top: 12px;
-    padding-bottom: -10px;
   }
-  .map-info dt .news__link a {
+  .news__link a {
     color: #E81919;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .map-info dt .info {
+  .info {
     padding: 20px  0 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: block;
   }
-  .map-info dt .info__meta {
+  .info__meta {
     width: 300px;
+    /* 固定値 */
   }
-  .map-info dt .info__title {
+  .info__title {
     margin-top: 10px;
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 16px;
   }
-  .map-info dt .price-section-title h2 {
+  /* price section */
+  .price-section-title h2 {
     text-align: center;
     margin-top: 82px;
     position: relative;
@@ -1112,7 +876,7 @@ header {
     color: #333333;
     opacity: 1;
   }
-  .map-info dt .price-section-title h2:after {
+  .price-section-title h2:after {
     content: "";
     margin: 0 auto;
     display: block;
@@ -1121,12 +885,12 @@ header {
     border-radius: 2px;
     background: #3F51B5 0% 0% no-repeat padding-box;
   }
-  .map-info dt .table__content {
+  .table__content {
     display: block;
     margin: auto;
     margin-top: 20px;
   }
-  .map-info dt .table__content img {
+  .table__content img {
     width: 100%;
   }
 }
