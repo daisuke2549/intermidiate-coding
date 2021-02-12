@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -46,7 +47,13 @@
               <li><a href="#">Menu5</a></li>
           </ul>
       </nav>
-      </header> 
+  <div class="floating">
+    <a href="#"><img src="./img/totop.svg" alt="トップへ戻る"></a>
+  </div>
+
+
+
+  </header> 
 <div class="main-content">
     <div class="main-content-header">
         <h1>一番伝えたいことを書く</h1>
@@ -218,12 +225,50 @@
             <dd>
               <input id="your-name" class="form-input" type="text" name="your-name" value="" placeholder="山田　太郎" required>
             </dd>
-          </div><!-- /.contact__control -->
+          </div>
           <div class="contact__control">
             <dt>
               <label class="contact__label contact__label--required" for="your-mail">メールアドレス</label>
             </dt>
             <dd>
+              <input id="your-email" class="form-input" type="text" name="your-email" value="" placeholder="山田　太郎" required>
+            </dd>
+          </div>
+        <div class="contact__control">
+          <dt>
+            <label class="contact__label" for="your-kind">お問い合わせ種別</label>
+          </dt>
+          <dd>
+            <select id="your-kind" class="form-select">
+              <option value="">ーーー</option>
+              <option value="a">セレクトA</option>
+              <option value="b">セレクトB</option>
+              <option value="c">セレクトC</option>
+            </select>
+          </dd>
+        </div>
+        <div class="contact__control">
+          <dt>
+            <label class="contact__label" for="your-message">お問い合わせ内容</label>
+          </dt>
+          <dd>
+            <textarea id="your-message" class="form-textarea" name="your-message" placeholder="お問い合わせを入力してください"></textarea>
+          </dd>
+        </div>
+        <div class="contact__radio">
+          <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio" checked><span>ラジオ１</span></label>
+          <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ２</span></label>
+          <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ３</span></label>
+        </div><!-- /.contact__radio -->
+
+
+
+
+
+
+
+
+              
         <div class="contact__check">
           <label>
             <input class="form-checkbox" type="checkbox" name="your-checkbox" required>
@@ -248,19 +293,19 @@
     </div>
     <div class="footer-center-part">
         <li>
-            <a href="" >Contact</a>
-          </li>
-          <li>
-            <a href="" >Access</a>
-          </li>
-          <li>
-            <a href="" >Price</a>
+            <a href="" >Card</a>
           </li>
           <li>
             <a href="" >News</a>
           </li>
           <li>
-            <a href="" class="is-active">Card</a>
+            <a href="" >Price</a>
+          </li>
+          <li>
+            <a href="" >Access</a>
+          </li>
+          <li>
+            <a href="" class="is-active">Contact</a>
           </li>
      </div>
      <div class="footer-right-part">
@@ -268,7 +313,13 @@
        <img src="./img/twitter.svg" alt="">
        <img src="./img/instagram.svg" alt="">
    </div>
-   </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="copyright">
+    <p>Copyright © 2020 デイトラ All rights reserved.</p>
+    </div>
+  </div>
+
 
   </footer>
 </body>
@@ -281,5 +332,24 @@
           $('.globalMenuSp').removeClass('active');
       }
   });
-});</script>
+});
+
+
+</script>
+<script>
+  jQuery(window).on("scroll", function($) {
+    if (jQuery(this).scrollTop() > 500) {
+      jQuery('.floating').show();
+    } else {
+      jQuery('.floating').hide();
+    }
+  });
+  
+  jQuery('.floating').click(function () {
+    jQuery('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
+  </script>
 </html>

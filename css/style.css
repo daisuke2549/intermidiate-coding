@@ -83,6 +83,25 @@ header {
   display: none;
 }
 
+/*トップへ戻るボタン*/
+.floating {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: none;
+}
+
+.floating a {
+  display: block;
+  padding: 4px;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.floating a:hover {
+  opacity: 1;
+}
+
 /* メイン画像のエリア */
 .main-content {
   background-image: url(../img/mainvisual.png);
@@ -584,10 +603,43 @@ header {
   margin-bottom: 0;
 }
 
+.contact__label--required {
+  position: relative;
+}
+
+.contact__label--required::after {
+  content: "必須";
+  position: absolute;
+  background: #e81919;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 4px 8px;
+  width: 44px;
+  display: block;
+  top: calc(100% + 8px);
+  left: 0;
+}
+
 .contact__control dt {
   width: 160px;
   padding: 6px 0 0;
   margin: 0;
+}
+
+.contact__control dd {
+  flex-grow: 1;
+  padding: 0;
+  height: 38px;
+  margin: 0;
+}
+
+.contact__label {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .contact-form {
@@ -645,7 +697,7 @@ header {
 
 /* フッター */
 footer {
-  background-color: #666666;
+  background-color: #333;
   height: 280px;
   color: #fff;
 }
@@ -679,6 +731,20 @@ footer {
   display: flex;
   justify-content: start;
   padding-top: 60px;
+}
+
+.footer-center-part li {
+  padding: 0 20px;
+}
+
+.footer-bottom {
+  margin-top: 46px;
+  font-size: 16px;
+  justify-content: center;
+}
+
+.copyright {
+  text-align: center;
 }
 
 .footer-right-part {
