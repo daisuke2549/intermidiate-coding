@@ -180,7 +180,7 @@ header{
   margin: 0 auto;
   height: 301px;
   margin-bottom: 20px;
-  padding: 16px 16px 35px;
+  padding: 16px 15px 10px;
   background-color: #ffffff;
   
 
@@ -266,7 +266,6 @@ header{
 .info__meta {
   width: 1000px; /* 固定値 */
 }
-/* タイトルのエリア */
 
 .info__label a{
   display: inline-block;
@@ -316,12 +315,6 @@ header{
   width: 800px;
   max-width: 100%;
 }
-
-
-
-
-
-
 
 
 /* priceセクション */
@@ -475,11 +468,228 @@ h2:after {
   font-size: 14px;
 }
 
+
+/* priceセクション */
+.price{
+  width:100%;
+  height: 758px;
+  opacity: 1;
+  background-color:#EFEFEF;
+}
+
+.price-section-title{
+h2{
+  text-align: center;
+  padding-top: 82px;
+  position: relative;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+h2:after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+  }
+}
+
+.table-default th:first-child {
+  width: 170px;
+}
+
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  background: #fff;
+  height:286px;
+  table-layout: fixed;
+}
+
+.table-default th,
+.table-default td {
+  padding: 18px 24px;
+  border: 1px solid #707070;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.table-default td{
+  text-align: right;
+}
+.table-default th{
+  padding: 14px 8px;
+}
+
+
+.table-default th {
+  text-align: center;
+  background: #999;
+  font-weight: 700;
+  color: #fff;
+}
+
+.table-default th:first-child {
+  width: 170px;
+}
+
+.table {
+  background: #efefef;
+}
+
+
+
+.table__content {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table__image {
+  margin-left: 30px;
+  img{
+
+    width: 454px;
+    margin-right: 40px;
+    text-align: center;
+  }
+}
+
+.table__price{
+  margin-right:20px ;
+}
+
+
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #707070;
+  background: #fff;
+
 .table__attention a {
   font-weight: 700;
   color: #333;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+  table-layout: fixed;
+}
+
+
+@media (max-width: 767px) {
+  .table__image {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.table-default th,
+.table-default td {
+  padding: 18px 24px;
+  border: 1px solid #707070;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
+.table-default td {
+  text-align: right;
+}
+
+.table-default td.table-default__multiline {
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+.table-default td span.m-active {
+  color: #e81919;
+}
+
+.table-default td span.m-small {
+  font-size: 0.825em;
+}
+
+.table-default__attention {
+  font-size: 13px;
+}
+
+.table__attention {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.table__attention a {
+  font-weight: 700;
+  color: #333;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* アクセスセクション */
+
+.access{
+  width:100%;
+  opacity: 1;
+  background-color:#fff;
+}
+
+.access-section-title{
+h2{
+  text-align: center;
+  padding-top: 82px;
+  position: relative;
+  font: normal normal bold 48px/82px YuGothic;
+  letter-spacing: 0px;
+  color: #333333;
+  opacity: 1;
+}
+h2:after {
+    content: "";
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: #3F51B5 0% 0% no-repeat padding-box;
+  }
+}
+.map__iframe-wrap{
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 80px;
+
+}
+
+.google-map{
+  width: 100%;
+  padding-top: 400 / 800 * 100%;
+  position: relative;
+  max-width:800px;
+  margin: 0 auto;
+
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+ 
+  }
+}
+
+.map-info dt{
+    float:left;
+
 }
 
 
@@ -538,6 +748,28 @@ h2:after {
 
 .map-info dt{
     float:left;
+.map-info dd{
+  text-align: left;
+
+}
+
+.map--link{
+  text-align: center;
+  color:#333;
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+  opacity: 1;
+    a{
+      width: 104px;
+      background: var(--unnamed-color-3f51b5) 0% 0% no-repeat padding-box;
+  
+      padding:20px 77px;
+      font-size:16px;
+      border-radius: 8px;
+      background:#3F51B5  url('../img/button-arrow.svg') 98% 50% no-repeat padding-box;
+    
+    }  
 
 }
 
@@ -691,7 +923,7 @@ footer{
     color:#fff;
 }
 
-.footer-top{　
+.footer-top{
   display: flex;
   justify-content: space-between;
 }
@@ -895,8 +1127,12 @@ nav.globalMenuSp.active {
 
 .card-items{
   width:100%;
+
   max-width: 242px;
   margin: 0 auto;
+
+  max-width: 262px;
+
   padding: 16px 16px 35px;
   background-color: #ffffff;
   margin-bottom: 10px;
@@ -911,6 +1147,8 @@ nav.globalMenuSp.active {
   p{ 
     font-size:$font-default;
     padding-top: 12px;
+    padding-bottom: - 
+    10px;
   }
 
 }
@@ -934,14 +1172,13 @@ nav.globalMenuSp.active {
 
 
 .info__meta {
-  width: 300px; /* 固定値 */
+  width: 300px; 
 }
-
 
 .info__title{
   margin-top: 10px;
   margin-left: 0px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 
@@ -977,7 +1214,5 @@ nav.globalMenuSp.active {
     width:100%;
   }
 }
-
-
-
+}
 }
