@@ -7,156 +7,211 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src = "./dist/wow.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 </head>
-<body>
+<body class="drawer drawer--right">
+<div class="wrap">
     <header class="header">
         <div class="header__inner">
-          <h1 class="header__logo"><img src="./img/logo.png" alt=""></h1>   
-          <div class="header__nav animated flash">
+          <h1 class="header__logo wow bounceIn"><img src="./img/logo.png" alt="ヘッダーロゴ"></h1>
+          <div class="header__nav wow flash">
             <ul>
                 <li>
-                    <a href="" >Contact</a>
+                    <a href="#a-contact">Contact</a>
                   </li>
                   <li>
-                    <a href="" >Access</a>
+                    <a href="#a-access">Access</a>
                   </li>
                   <li>
-                    <a href="" >Price</a>
+                    <a href="#a-price">Price</a>
                   </li>
                   <li>
-                    <a href="" >News</a>
+                    <a href="#a-news">News</a>
                   </li>
                   <li>
-                    <a href="" class="is-active">Card</a>
+                    <a href="#a-card">Card</a>
                   </li>
-              </ul>     
+              </ul>
             </div>
         </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="globalMenuSp">
-          <ul>
-              <li><a href="#">Menu1</a></li>
-              <li><a href="#">Menu2</a></li>
-              <li><a href="#">Menu3</a></li>
-              <li><a href="#">Menu4</a></li>
-              <li><a href="#">Menu5</a></li>
-          </ul>
-      </nav>
-  <div class="floating">
+
+ <button type="button" class="drawer-toggle drawer-hamburger wow lightSpeedIn">
+  <span class="sr-only">toggle navigation</span>
+  <span class="drawer-hamburger-icon"></span>
+</button>
+<nav class="drawer-nav" role="navigation">
+  <ul class="drawer-menu">
+    <li><a class="drawer-menu-item" href="#card">Card</a></li>
+    <li><a class="drawer-menu-item" href="#news">News</a></li>
+    <li><a class="drawer-menu-item" href="#price">Price</a></li>
+    <li><a class="drawer-menu-item" href="#access">Access</a></li>
+    <li><a class="drawer-menu-item" href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+  <div class="floating wow bounceIn">
     <a href="#"><img src="./img/totop.svg" alt="トップへ戻る"></a>
   </div>
 
 
 
-  </header> 
+  </header>
 <div class="main-content">
-    <div class="main-content-header">
+    <div class="main-content-header wow shake">
         <h1>一番伝えたいことを書く</h1>
         <p>リードリードリード</p>
         <p><button class="main-content-header-button">お問い合わせ</button></p>
     </div>
 </div>
 <section id = "card" class="card inner section">
- <div class="card-section-title title">
-   <h2>Card</h2>
+ <div class="card-section-title title wow fadeInUp">
+   <h2 class="">Card</h2>
  </div>
-<div class="card-container">
-  <div class="card-items animated fadeInUp">
-    <img src="./img/card-img.png" alt="card-image">
-    <h2 class="card-title">タイトルタイトル</h2> 
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+ <div class="card__items">
+  <div class="card__item wow fadeInUp">
+    <a class="media" href="">
+      <div class="media__img"><img src="./img/card-img.png" alt=""></div>
+      <div class="media__body">
+        <div class="media__title">タイトルタイトル</div>
+        <div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </a>
   </div>
-  <div class="card-items animated fadeInUp">
-    <img src="./img/card-img.png" alt="card-image">
-    <h2 class="card-title">タイトルタイトル</h2> 
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  <div class="card__item wow fadeInUp">
+    <a class="media" href="">
+      <div class="media__img"><img src="./img/card-img.png" alt=""></div>
+      <div class="media__body">
+        <div class="media__title">タイトルタイトル</div>
+        <div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </a>
   </div>
-  <div class="card-items animated fadeInUp">
-    <img src="./img/card-img.png" alt="card-image">
-    <h2 class="card-title">タイトルタイトル</h2> 
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  <div class="card__item wow fadeInUp">
+    <a class="media" href="">
+      <div class="media__img"><img src="./img/card-img.png" alt=""></div>
+      <div class="media__body">
+        <div class="media__title">タイトルタイトル</div>
+        <div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </a>
   </div>
-  <div class="card-items animated fadeInUp">
-    <img src="./img/card-img.png" alt="card-image">
-    <h2 class="card-title">タイトルタイトル</h2> 
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  <div class="card__item wow fadeInUp">
+    <a class="media" href="">
+      <div class="media__img"><img src="./img/card-img.png" alt=""></div>
+      <div class="media__body">
+        <div class="media__title">タイトルタイトル</div>
+        <div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </a>
   </div>
-  <div class="card-items animated fadeInUp">
-    <img src="./img/card-img.png" alt="card-image">
-    <h2 class="card-title">タイトルタイトル</h2> 
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  <div class="card__item wow fadeInUp">
+    <a class="media" href="">
+      <div class="media__img"><img src="./img/card-img.png" alt=""></div>
+      <div class="media__body">
+        <div class="media__title">タイトルタイトル</div>
+        <div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </a>
   </div>
-  <div class="card-items animated fadeInUp">
-    <img src="./img/card-img.png" alt="card-image">
-    <h2 class="card-title">タイトルタイトル</h2> 
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-  </div> 
-</div>
-</section>
+  <div class="card__item wow fadeInUp">
+    <a class="media" href="">
+      <div class="media__img"><img src="./img/card-img.png" alt=""></div>
+      <div class="media__body">
+        <div class="media__title">タイトルタイトル</div>
+        <div class="media__content">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
+      </div>
+    </a>
+  </div>
+</div><!-- /.card__items -->
+</section><!-- /.card -->
+
+
+
 <section id = "news" class="news inner section">
-  <div class="news-section-title title">
+  <div class="news-section-title title wow fadeInUp">
     <h2>News</h2>
   </div>
   <div class="news__items">
     <div class="news__item">
       <div class="info">
-        <div class="info__meta">
+        <div class="info__meta wow fadeInUp">
           <time class="info__published" datetime="2019-01-30">2019-01-30</time>
           <div class="info__label"><a href="">ラベル１</a></div>
         </div>
-        <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+        <div class="info__title wow fadeInUp"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
       </div>
     </div>
-    <div class="news__item">
+    <div class="news__item wow fadeInUp">
       <div class="info">
         <div class="info__meta">
           <time class="info__published" datetime="2019-01-30">2019-01-30</time>
           <div class="info__label info__label--type01"><a href="">ラベル２</a></div>
         </div>
-        <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+        <div class="info__title wow fadeInUp"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
       </div>
     </div>
-    <div class="news__item">
+    <div class="news__item wow fadeInUp">
       <div class="info">
         <div class="info__meta">
           <time class="info__published" datetime="2019-01-30">2019-01-30</time>
           <div class="info__label info__label--type02"><a href="">ラベル３</a></div>
         </div>
-        <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+        <div class="info__title wow fadeInUp"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
       </div>
     </div>
-    <div class="news__item">
+    <div class="news__item wow fadeInUp">
       <div class="info">
         <div class="info__meta">
           <time class="info__published" datetime="2019-01-30">2019-01-30</time>
           <div class="info__label"><a href="">ラベル１</a></div>
         </div>
-        <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+        <div class="info__title wow fadeInUp"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
       </div>
     </div>
     <div class="news__item">
       <div class="info">
-        <div class="info__meta">
+        <div class="info__meta wow fadeInUp">
           <time class="info__published" datetime="2019-01-30">2019-01-30</time>
           <div class="info__label"><a href="">ラベル１</a></div>
         </div>
-        <div class="info__title"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
+        <div class="info__title wow fadeInUp"><a href="">ニュースニュースニュースニュースニュースニュースニュースニュース</a></div><!-- /.info__title -->
       </div>
     </div>
   </div>
-  <div class="news__link"><a href="">more</a></div>
+  <div class="news__link wow fadeInUp"><a href="">more</a></div>
 </section>
 <section id = "price" class="price inner section">
-  <div class="price-section-title title">
+  <div class="price-section-title title wow fadeInUp">
     <h2>Price</h2>
     <div class="table__content">
-      <div class="table__image"><img src="./img/price-img@2x.png" alt=""></div>
-      <div class="table__price">
+      <div class="table__image wow fadeInUp">
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/price-img@2x.png" alt="price-img"></div>
+            <div class="swiper-slide"><img src="./img/price-img2.png" alt="price-img2"></div>
+            <div class="swiper-slide"><img src="./img/price-img3.png" alt="price-img3"></div>
+            <div class="swiper-slide"><img src="./img/price-img4.png" alt="price-img4"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="table__price wow fadeInUp">
         <table class="table-default">
           <tr>
             <th></th>
@@ -193,10 +248,10 @@
   </div>
 </section>
 <section id = "access" class="access inner section">
-  <div class="access-section-title title">
+  <div class="access-section-title title wow fadeInUp">
     <h2>Access</h2>
   <div class="map__iframe-wrap">
-  <div class="google-map">
+  <div class="google-map wow fadeInUp">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52023.372306754194!2d139.4667807264326!3d35.418614270696324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601850c3fa69f1af%3A0xcdf6519b3f90d883!2z56We5aWI5bed55yM5qiq5rWc5biC5rOJ5Yy6!5e0!3m2!1sja!2sjp!4v1612505842916!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><br>
   </div>
   <dl class="map-info">
@@ -205,7 +260,7 @@
     <dt>アクセス</dt>
     <dd>&emsp;〇〇駅から右に５分</dd>
   </dl>
-  <div class="map--link"><a class="button-arrow-right" href="https://goo.gl/maps/MCQpp5XWKNfGT7Vt5" target="_blank">Googleマップで見る</a></div>
+  <div class="map--link wow fadeInUp"><a class="button-arrow-right" href="https://goo.gl/maps/MCQpp5XWKNfGT7Vt5" target="_blank">Googleマップで見る</a></div>
   </div>
 </div>
 </section>
@@ -214,7 +269,7 @@
   <div class="contact-section-title title">
     <h2>Contact</h2>
   </div>
-  <div class="contact-form">
+  <div class="contact-form wow fadeInUp">
     <div class="contact__item">
       <form action="#">
         <dl class="contact__controls">
@@ -259,25 +314,16 @@
           <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio" checked><span>ラジオ１</span></label>
           <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ２</span></label>
           <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ３</span></label>
-        </div><!-- /.contact__radio -->
-
-
-
-
-
-
-
-
-              
+        </div>
         <div class="contact__check">
           <label>
             <input class="form-checkbox" type="checkbox" name="your-checkbox" required>
             <span><a href="">プライバシーポリシー</a>に合意する</span>
           </label>
-        </div><!-- /.contact__check -->
-        <div class="contact__submit"><a href="">送信する</a></div><!-- /.contact__submit -->
+        </div>
+        <div class="contact__submit"><a href="">送信する</a></div>
       </form>
-    </div><!-- /.contact__item -->
+    </div>
   </div>
 </section>
 
@@ -285,71 +331,111 @@
 <footer>
   <div class="footer-top">
     <div class="footer-left-logo">
-       <img src="./img/logo.png" alt="">
-      <div class="footer-left-logo-comment">
+       <img src="./img/logo.png" alt="フッターロゴ">
+      <div class="footer-left-logo-comment wow fadeInUp">
        <p>住所：ほげほげのほげほげ</p>
        <p>TEL：0000-00-0000</p>
       </div>
     </div>
-    <div class="footer-center-part">
+    <div class="footer-center-part wow fadeInUp">
         <li>
-            <a href="" >Card</a>
+            <a href="#card" >Card</a>
           </li>
           <li>
-            <a href="" >News</a>
+            <a href="#news" >News</a>
           </li>
           <li>
-            <a href="" >Price</a>
+            <a href="price" >Price</a>
           </li>
           <li>
-            <a href="" >Access</a>
+            <a href="#access">Access</a>
           </li>
           <li>
-            <a href="" class="is-active">Contact</a>
+            <a href="#contact" class="is-active">Contact</a>
           </li>
      </div>
-     <div class="footer-right-part">
-       <img src="./img/facebook.svg" alt="">
-       <img src="./img/twitter.svg" alt="">
-       <img src="./img/instagram.svg" alt="">
+     <div class="footer-right-part wow fadeInUp">
+       <img src="./img/facebook.svg" alt="facebook">
+       <img src="./img/twitter.svg" alt="twitter">
+       <img src="./img/instagram.svg" alt="instagram">
    </div>
   </div>
   <div class="footer-bottom">
-    <div class="copyright">
+    <div class="copyright wow fadeInUp">
     <p>Copyright © 2020 デイトラ All rights reserved.</p>
     </div>
   </div>
 
 
   </footer>
+</div>
 </body>
-<script type="text/javascript" src="./js/main.js">$(function() {
-  $('.hamburger').click(function() {
-      $(this).toggleClass('active');
-      if ($(this).hasClass('active')) {
-          $('.globalMenuSp').addClass('active');
-      } else {
-          $('.globalMenuSp').removeClass('active');
-      }
-  });
-});
 
-
-</script>
 <script>
+
   jQuery(window).on("scroll", function($) {
-    if (jQuery(this).scrollTop() > 500) {
-      jQuery('.floating').show();
-    } else {
-      jQuery('.floating').hide();
+    if ( jQuery(this).scrollTop() > 500) {
+      if (window.matchMedia('(max-width: 768px)').matches) {
+        jQuery('.floating').hide();
+      }else{
+        jQuery('.floating').show();
+      }
     }
   });
-  
   jQuery('.floating').click(function () {
     jQuery('body,html').animate({
       scrollTop: 0
     }, 500);
     return false;
   });
+
+  const swiper = new Swiper('.swiper-container', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+      clickable: true,
+  },
+  autoplay: {
+       delay:3000,
+       disableOnInteraction: true
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+
+$(document).ready(function() {
+    $('.drawer').drawer();
+  });
+
+jQuery('a[href^="#"]').click(function() {
+  let speed = 1000;
+  let id = jQuery(this).attr("href");
+  let target = jQuery("#" == id ? "html" : id);
+  jQuery("html, body").animate(
+    {
+      scrollTop: position
+   },
+    speed
+  );
+  return false;
+});
+
+jQuery('.header__nav ul li a').click(function() {
+  jQuery('.header__nav ul li a').removeClass( 'is-active' );
+  jQuery(this).addClass( 'is-active' );
+  return false;
+});
+
+</script>
+<script>
+  new WOW().init();
   </script>
 </html>
