@@ -134,8 +134,8 @@
       </div>
     </a>
   </div>
-</div><!-- /.card__items -->
-</section><!-- /.card -->
+</div>
+</section>
 
 
 
@@ -266,50 +266,51 @@
 </section>
 
 <section id = "contact" class="contact inner section">
-  <div class="contact-section-title title">
+  <div class="contact-section-title title wow fadeInUp">
     <h2>Contact</h2>
   </div>
-  <div class="contact-form wow fadeInUp">
-    <div class="contact__item">
+  <div class="contact__items">
+    <div class="contact__item wow fadeInUp">
       <form action="#">
         <dl class="contact__controls">
-          <div class="contact__control">
+          <div class="contact__control contact__control--required">
             <dt>
-              <label class="contact__label contact__label--required" for="your-name">お名前</label>
+              <label class="contact__label contact__label--required contact__label--required_name" for="your-name">お名前</label>
             </dt>
             <dd>
               <input id="your-name" class="form-input" type="text" name="your-name" value="" placeholder="山田　太郎" required>
             </dd>
           </div>
-          <div class="contact__control">
+          <div class="contact__control contact__control--required">
             <dt>
               <label class="contact__label contact__label--required" for="your-mail">メールアドレス</label>
             </dt>
             <dd>
-              <input id="your-email" class="form-input" type="text" name="your-email" value="" placeholder="山田　太郎" required>
+              <input id="your-mail" class="form-input" type="email" name="your-mail" value="" placeholder="text@example.com" required>
             </dd>
           </div>
-        <div class="contact__control">
-          <dt>
-            <label class="contact__label" for="your-kind">お問い合わせ種別</label>
-          </dt>
-          <dd>
-            <select id="your-kind" class="form-select">
-              <option value="">ーーー</option>
-              <option value="a">セレクトA</option>
-              <option value="b">セレクトB</option>
-              <option value="c">セレクトC</option>
-            </select>
-          </dd>
-        </div>
-        <div class="contact__control">
-          <dt>
-            <label class="contact__label" for="your-message">お問い合わせ内容</label>
-          </dt>
-          <dd>
-            <textarea id="your-message" class="form-textarea" name="your-message" placeholder="お問い合わせを入力してください"></textarea>
-          </dd>
-        </div>
+          <div class="contact__control">
+            <dt>
+              <label class="contact__label" for="your-kind">お問い合わせ種別</label>
+            </dt>
+            <dd>
+              <select id="your-kind" class="form-select">
+                <option value="">ーーー</option>
+                <option value="a">セレクトA</option>
+                <option value="b">セレクトB</option>
+                <option value="c">セレクトC</option>
+              </select>
+            </dd>
+          </div>
+          <div class="contact__control">
+            <dt>
+              <label class="contact__label" for="your-message">お問い合わせ内容</label>
+            </dt>
+            <dd>
+              <textarea id="your-message" class="form-textarea" name="your-message" placeholder="お問い合わせを入力してください"></textarea>
+            </dd>
+          </div>
+        </dl>
         <div class="contact__radio">
           <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio" checked><span>ラジオ１</span></label>
           <label class="contact__radio-item"><input class="form-radio" type="radio" name="your-radio"><span>ラジオ２</span></label>
@@ -318,10 +319,34 @@
         <div class="contact__check">
           <label>
             <input class="form-checkbox" type="checkbox" name="your-checkbox" required>
-            <span><a href="">プライバシーポリシー</a>に合意する</span>
+
+            <span><a class="js-modal-open" href="" data-target="for-modal">プライバシーポリシー</a>に合意する</span>
           </label>
         </div>
-        <div class="contact__submit"><a href="">送信する</a></div>
+
+
+        <div class="for-modal">
+
+          <div class="contact__modal-background for-modal"></div><!-- /.contact__modal-background -->
+          <div class="contact__modal for-modal">
+            <div class="contact__modal-close-icon js-modal-close" data-target="for-modal"><img src="img/icon-modal-close.png" alt=""></div><!-- /.contact__modal-close -->
+            <div class="contact__modal-title">プライバシーポリシー</div><!-- /.contact__modal-title -->
+            <div class="contact__modal-content">
+              <div class="contact__modal-head">プライバシーポリシー</div><!-- /.contact__modal-head -->
+              <div class="contact__modal-text">プライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシー。</div><!-- /.contact__modal-text -->
+              <div class="contact__modal-head">プライバシーポリシー</div><!-- /.contact__modal-head -->
+              <div class="contact__modal-text">プライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシー。</div><!-- /.contact__modal-text -->
+              <div class="contact__modal-head">プライバシーポリシー</div><!-- /.contact__modal-head -->
+              <div class="contact__modal-text">プライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシー。</div><!-- /.contact__modal-text -->
+              <div class="contact__modal-head">プライバシーポリシー</div><!-- /.contact__modal-head -->
+              <div class="contact__modal-text">プライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシープライバシーポリシー。</div><!-- /.contact__modal-text -->
+            </div><!-- /.contact__modal-content -->
+            <div class="contact__modal-close-button"><button class="button-modal js-modal-close" type="button" data-target="for-modal">閉じる</button></div><!-- /.contact__modal-close-button -->
+          </div><!-- /.contact__modal -->
+
+
+        </div>
+        <div class="contact__submit"><a class="button-arrow-right" type="submit" >送信する</div><!-- /.contact__submit -->
       </form>
     </div>
   </div>
@@ -433,6 +458,24 @@ jQuery('.header__nav ul li a').click(function() {
   jQuery(this).addClass( 'is-active' );
   return false;
 });
+
+
+jQuery('.js-modal-open').click(function(e) {
+				e.preventDefault();
+				let target = jQuery(this).data("target");
+				jQuery('.' + target).addClass('is-show');
+
+				return false;
+			});
+
+			// モダール（閉じる）
+			jQuery('.js-modal-close').click(function(e) {
+				e.preventDefault();
+				let target = jQuery(this).data("target");
+				jQuery('.' + target).removeClass('is-show');
+
+				return false;
+			});
 
 </script>
 <script>
